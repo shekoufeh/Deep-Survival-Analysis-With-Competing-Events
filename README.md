@@ -12,7 +12,7 @@ Requirements for imputation strategy
 
 * Further package versions can be found in: environment feateng_env.yml
 
-Requirements for running Deep survival analysis
+Requirements for Deep survival analysis
 ---------------
 * python 3.6
 * To run on GPU: python 2.7, tensorflow 1.12.0
