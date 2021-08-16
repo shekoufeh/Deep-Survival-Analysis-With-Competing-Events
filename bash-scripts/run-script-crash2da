@@ -1,0 +1,13 @@
+#!/bin/bash
+
+python main_RandomSearch.py crash2da_1 |& tee log-crash2da_1.txt
+python main_RandomSearch.py crash2da_12 |& tee log-crash2da_12.txt
+python main_RandomSearch.py crash2da_123 |& tee log-crash2da_123.txt
+python main_RandomSearch.py crash2da_1234 |& tee log-crash2da_1234.txt
+
+python main_RandomSearch.py crash2da_4123 |& tee log-crash2da_4123.txt
+python main_RandomSearch.py crash2da_5123 |& tee log-crash2da_5123.txt
+python main_RandomSearch.py crash2da_6123 |& tee log-crash2da_6123.txt
+python main_RandomSearch.py crash2da_7123 |& tee log-crash2da_7123.txt
+python main_RandomSearch.py crash2da_8123 |& tee log-crash2da_8123.txt
+python main_RandomSearch.py crash2da_9123 |& tee log-crash2da_9123.txt

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+python summarize_results.py crash2bo_noPreprocessOneEvent_1 |& tee log-test-crash2bo_noPreprocessOneEvent_1.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_12 |& tee log-test-crash2bo_noPreprocessOneEvent_12.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_123 |& tee log-test-crash2bo_noPreprocessOneEvent_123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_1234 |& tee log-test-crash2bo_noPreprocessOneEvent_1234.txt
+
+python summarize_results.py crash2bo_noPreprocessOneEvent_4123 |& tee log-test-crash2bo_noPreprocessOneEvent_4123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_5123 |& tee log-test-crash2bo_noPreprocessOneEvent_5123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_6123 |& tee log-test-crash2bo_noPreprocessOneEvent_6123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_7123 |& tee log-test-crash2bo_noPreprocessOneEvent_7123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_8123 |& tee log-test-crash2bo_noPreprocessOneEvent_8123.txt
+python summarize_results.py crash2bo_noPreprocessOneEvent_9123 |& tee log-test-crash2bo_noPreprocessOneEvent_9123.txt

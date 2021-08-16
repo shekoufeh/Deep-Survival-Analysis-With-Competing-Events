@@ -1,0 +1,43 @@
+#!/bin/bash
+##################################
+#             TRAIN				 #
+##################################
+
+# DeepHit 1, data with Imputation 
+bash ./run-script
+bash ./run-script-crash2da
+bash ./run-script-crash2bo
+bash ./run-script-SEER
+
+# DeepHit 2
+bash ./run-script-uncensored
+bash ./run-script-uncensored-crash2da
+bash ./run-script-uncensored-crash2bo
+bash ./run-script-uncensored-SEER
+
+# DeepHit 1, data without Imputation 
+bash ./run-script-oneevent
+bash ./run-script-oneevent-crash2da
+bash ./run-script-oneevent-crash2bo
+bash ./run-script-oneevent-SEER
+
+##################################
+#             TEST				 #
+##################################
+# DeepHit 1, data with Imputation 
+bash ./run-script-test
+bash ./run-script-test-crash2da
+bash ./run-script-test-crash2bo
+bash ./run-script-test-SEER
+
+# DeepHit 2
+bash ./run-script-uncensored-test
+bash ./run-script-uncensored-test-crash2da
+bash ./run-script-uncensored-test-crash2bo
+bash ./run-script-uncensored-test-SEER
+
+# DeepHit 1, data without Imputation 
+bash ./run-script-test-oneevent
+bash ./run-script-oneevent-test-crash2da
+bash ./run-script-oneevent-test-crash2bo
+bash ./run-script-oneevent-test-SEER

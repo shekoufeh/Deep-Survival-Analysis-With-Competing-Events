@@ -1,0 +1,33 @@
+#!/bin/bash
+
+python summarize_results.py 0.2_1_606585_1 |& tee log-test-0.2_1_606585_1.txt
+python summarize_results.py 0.2_1_606585_12 |& tee log-test-0.2_1_606585_12.txt
+python summarize_results.py 0.2_1_606585_123 |& tee log-test-0.2_1_606585_123.txt
+python summarize_results.py 0.2_1_606585_1234 |& tee log-test-0.2_1_606585_1234.txt
+python summarize_results.py 0.4_1_606585_1 |& tee log-test-0.4_1_606585_1.txt
+python summarize_results.py 0.4_1_606585_12 |& tee log-test-0.4_1_606585_12.txt
+python summarize_results.py 0.4_1_606585_123 |& tee log-test-0.4_1_606585_123.txt
+python summarize_results.py 0.4_1_606585_1234 |& tee log-test-0.4_1_606585_1234.txt
+python summarize_results.py 0.8_1_606585_1 |& tee log-test-0.8_1_606585_1.txt
+python summarize_results.py 0.8_1_606585_12 |& tee log-test-0.8_1_606585_12.txt
+python summarize_results.py 0.8_1_606585_123 |& tee log-test-0.8_1_606585_123.txt
+python summarize_results.py 0.8_1_606585_1234 |& tee log-test-0.8_1_606585_1234.txt
+
+python summarize_results.py 0.2_1_606585_4123 |& tee log-test-0.2_1_606585_4123.txt
+python summarize_results.py 0.2_1_606585_5123 |& tee log-test-0.2_1_606585_5123.txt
+python summarize_results.py 0.2_1_606585_6123 |& tee log-test-0.2_1_606585_6123.txt
+python summarize_results.py 0.2_1_606585_7123 |& tee log-test-0.2_1_606585_7123.txt
+python summarize_results.py 0.2_1_606585_8123 |& tee log-test-0.2_1_606585_8123.txt
+python summarize_results.py 0.2_1_606585_9123 |& tee log-test-0.2_1_606585_9123.txt
+python summarize_results.py 0.4_1_606585_4123 |& tee log-test-0.4_1_606585_4123.txt
+python summarize_results.py 0.4_1_606585_5123 |& tee log-test-0.4_1_606585_5123.txt
+python summarize_results.py 0.4_1_606585_6123 |& tee log-test-0.4_1_606585_6123.txt
+python summarize_results.py 0.4_1_606585_7123 |& tee log-test-0.4_1_606585_7123.txt
+python summarize_results.py 0.4_1_606585_8123 |& tee log-test-0.4_1_606585_8123.txt
+python summarize_results.py 0.4_1_606585_9123 |& tee log-test-0.4_1_606585_9123.txt
+python summarize_results.py 0.8_1_606585_4123 |& tee log-test-0.8_1_606585_4123.txt
+python summarize_results.py 0.8_1_606585_5123 |& tee log-test-0.8_1_606585_5123.txt
+python summarize_results.py 0.8_1_606585_6123 |& tee log-test-0.8_1_606585_6123.txt
+python summarize_results.py 0.8_1_606585_7123 |& tee log-test-0.8_1_606585_7123.txt
+python summarize_results.py 0.8_1_606585_8123 |& tee log-test-0.8_1_606585_8123.txt
+python summarize_results.py 0.8_1_606585_9123 |& tee log-test-0.8_1_606585_9123.txt

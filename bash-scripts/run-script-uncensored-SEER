@@ -1,0 +1,12 @@
+#!/bin/bash
+
+python main_RandomSearch.py SEER_noprocessing_1 |& tee log-SEER_noprocessing_1.txt
+python main_RandomSearch.py SEER_noprocessing_12 |& tee log-SEER_noprocessing_12.txt
+python main_RandomSearch.py SEER_noprocessing_123 |& tee log-SEER_noprocessing_123.txt
+python main_RandomSearch.py SEER_noprocessing_1234 |& tee log-SEER_noprocessing_1234.txt
+python main_RandomSearch.py SEER_noprocessing_4123 |& tee log-SEER_noprocessing_4123.txt
+python main_RandomSearch.py SEER_noprocessing_5123 |& tee log-SEER_noprocessing_5123.txt
+python main_RandomSearch.py SEER_noprocessing_6123 |& tee log-SEER_noprocessing_6123.txt
+python main_RandomSearch.py SEER_noprocessing_7123 |& tee log-SEER_noprocessing_7123.txt
+python main_RandomSearch.py SEER_noprocessing_8123 |& tee log-SEER_noprocessing_8123.txt
+python main_RandomSearch.py SEER_noprocessing_9123 |& tee log-SEER_noprocessing_9123.txt
