@@ -4,7 +4,7 @@ This repository contains scripts for analysing survival data with competing even
 
 The scripts for imputation strategy can be found in ```./imputation-scripts```.
 
-Requirements for imputation strategy
+Requirements for Imputation Strategy
 ---------------
 * pyhton 3.7
 * R version 4.0.3
