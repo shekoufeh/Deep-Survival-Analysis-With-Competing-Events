@@ -6,8 +6,8 @@ The scripts for imputation strategy can be found in ```./imputation-scripts```.
 
 Requirements for imputation strategy
 ---------------
-* pyhton 3.7,
-* R version 4.0.3,
+* pyhton 3.7
+* R version 4.0.3
 * requires packages tidyverse 1.3.1 and discsurv 1.4.1
 
 * Further package versions can be found in: environment feateng_env.yml
