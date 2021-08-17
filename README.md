@@ -44,9 +44,9 @@ After preprocessing the dataset use
 ```
 python convert-preprocessed-into-deephit-format.py 
 ```
-to prepare the data to be processed with the deep neural network. For instance for training the network with ```SEER_1``` dataset use:
+to prepare the data to be analysed with the deep neural network. For training the network (for example on ```SEER``` dataset) use:
 ```
-python main_RandomSearch.py SEER_1
+python main_RandomSearch.py SEER_1 # SEER_1 referes to a preprocessed version of SEER
 ```
 To test the trained network, use:
 ```
