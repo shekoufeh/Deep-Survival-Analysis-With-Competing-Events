@@ -1,4 +1,4 @@
-# Competing-Event-Deep-Survival-Analysis
+# Deep Survival Analysis With Competing Events
 
 This repository contains scripts for analysing survival data with competing events using Deep Neural Networks. A preprocessing on the datasets is performed prior to feeding it to the Deep neural network. The data preprocessing is based on an imputation strategy that incorporates the subdistribution weights derived from a classical model. The Deep neural network an adaptation of the DeepHit [1].
 
