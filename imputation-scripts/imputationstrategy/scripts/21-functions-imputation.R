@@ -17,9 +17,9 @@ DRSA_createSampledRawOutput21 <- function(dataS = dataS, eventCols = c("e1", "e2
       mutate( v_samplegew =  (subDistWeights- rev(lag(rev(subDistWeights)))),
               maxt = max(as.numeric(timeInt))) %>% 
       # new version:
-      mutate(v_samplegew = ifelse(timeInt == maxt, subDistWeights, v_samplegew))%>%
+      # mutate(v_samplegew = ifelse(timeInt == maxt, subDistWeights, v_samplegew))%>%
       # old version:
-      #mutate( v_samplegew =   ( lag(subDistWeights) - subDistWeights)) %>%
+      mutate( v_samplegew =   ( lag(subDistWeights) - subDistWeights)) %>%
       select(-maxt) %>%
       data.frame() 
     

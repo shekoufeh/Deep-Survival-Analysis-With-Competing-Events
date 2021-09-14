@@ -58,7 +58,7 @@ for d in savePathNamesTest:
 lt=["imputed","no-imputation-signle-event","multi-event"] #drawn-sub-dist-hazard,no-preprocessing
 path = "."+sep+"raw"+sep+"606585"+sep+"feateng"+sep
 
-if(False):
+if(True):
     # Create data version with competing event time as censoring time  
     f = []
     for (dirpath, dirnames, filenames) in walk(path):
@@ -175,7 +175,7 @@ for i in range(3):
     sortedF=sorted(f)
     numOfDataSets=int(len(sortedF)/3)
     path ='.'+sep+source+sep
-    savePath = 'C:\\Users\\gorizadeh\\Desktop\\a\\'+sep+dest+sep
+    #savePath = 'C:\\Users\\gorizadeh\\Desktop\\a\\'+sep+dest+sep
     for i in range(numOfDataSets):
         testname =sortedF[i]
         trainname=sortedF[numOfDataSets+i]
