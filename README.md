@@ -44,15 +44,15 @@ After preprocessing the dataset use
 ```
 python convert-preprocessed-into-deephit-format.py 
 ```
-to prepare the data to be analysed with the deep neural network. For training the network (for example on ```SEER``` dataset) use:
+to prepare the data to be analysed with the deep neural network. For training the network (for example on synthetic dataset with type-1 event rate 0.2, called ```0.2_1_606585_1```) use:
 ```
-python main_RandomSearch.py SEER_1 # SEER_1 referes to a preprocessed version of SEER
+python main_RandomSearch.py 0.2_1_606585_1 # 0.2_1_606585_1 referes to a preprocessed version of 0.2_1_606585_1
 ```
 To test the trained network, use:
 ```
-python summarize_results.py SEER_1
+python summarize_results.py 0.2_1_606585_1
 ```
-
+Note that ```0.2_1_606585_1``` file contains 30,000 entries. The first 15,000 entries are used for training, and the next 5,000 and 10,000 are used as validation and test dataset.
 
 Folder naming conventions:
 
