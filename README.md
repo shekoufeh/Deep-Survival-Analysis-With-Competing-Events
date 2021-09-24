@@ -21,7 +21,7 @@ Requirements for Deep survival analysis
 
 Imputation Strategy for Data Preprocessing
 ---------------
-SEER, CRASH-2 and simulated datasets can be found in ```./imputation-scripts/imputationstrategy/data```. Expects all R scripts to be run from imputationstrategy (workspace not within 'scripts' folder but one folder above).
+CRASH-2 and simulated datasets can be found in ```./imputation-scripts/imputationstrategy/data```. Expects all R scripts to be run from imputationstrategy (workspace not within 'scripts' folder but one folder above).
 ```21-functions-imputation.R``` contains new creation of weights (old version in outcommented line)
 
 First, run each R script for impuation and preprocessing:
