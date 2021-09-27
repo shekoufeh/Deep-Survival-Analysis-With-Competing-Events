@@ -1,6 +1,6 @@
 # Deep Survival Analysis With Competing Events
 
-This repository contains scripts for analysing survival data with competing events using Deep Neural Networks. A preprocessing on the datasets is performed prior to feeding it to the Deep neural network. The data preprocessing is based on an imputation strategy that incorporates the subdistribution weights derived from a classical model. The Deep neural network an adaptation of the DeepHit [1].
+This repository contains scripts for analysing survival data with competing events using Deep Neural Networks. A preprocessing on the datasets is performed before feeding it to the Deep neural network. The data preprocessing is based on an imputation strategy that incorporates the subdistribution weights derived from a classical model. The Deep neural network used in this repository is an adaptation of the DeepHit [1].
 
 The scripts for imputation strategy can be found in ```./imputation-scripts```.
 
@@ -21,21 +21,18 @@ Requirements for Deep survival analysis
 
 Imputation Strategy for Data Preprocessing
 ---------------
-CRASH-2 and simulated datasets can be found in ```./imputation-scripts/imputationstrategy/data```. Expects all R scripts to be run from imputationstrategy (workspace not within 'scripts' folder but one folder above).
-```21-functions-imputation.R``` contains new creation of weights (old version in outcommented line)
+To test the imputation strategy, CRASH-2 and simulated datasets can be used (dataset location in ```./imputation-scripts/imputationstrategy/data```). All R scripts must be run from ```imputationstrategy``` (workspace not within 'scripts' folder, but one folder above).
 
-First, run each R script for impuation and preprocessing:
+For imputing the time of competing events, first, run the preprocessing R script for each dataset:
 ```
 script/21-preprocessing-simulation.R 
 scripts/21-preprocessing-CRASH2.R 
-scripts/21-preprocessing-SEER.R 
 ```
 
-Next, run python script to prepare 'feature engeneered' code (as originally expected by DRSA network):
+Next, run python script to prepare 'feature engineered' covariates (as used by Deep recurrent survival analysis (DRSA) network [2]):
 ```
-scripts/feateng_sim_606585.py # path needs to be adapted
-scripts/feateng_CRASH2.py # path needs to be adapted; run once for CRASH2da and once for CRASH2bo
-scripts/feateng_SEER.py # path needs to be adapted
+scripts/feateng_sim_606585.py 
+scripts/feateng_CRASH2.py # run once for CRASH2da and once for CRASH2bo
 ```
 
 Survival Analysis with Competing Events Using DeepHit
@@ -73,3 +70,5 @@ compute_CIF.R
 References
 ---------------
 [1] Lee, C., Zame, W. R., Yoon, J., & van der Schaar, M. (2018, April). Deephit: A deep learning approach to survival analysis with competing risks. In Thirty-second AAAI conference on artificial intelligence.
+
+[2] Ren, K., Qin, J., Zheng, L., Yang, Z., Zhang, W., Qiu, L., & Yu, Y. (2019, July). Deep recurrent survival analysis. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, No. 01, pp. 4798-4805).
